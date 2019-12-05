@@ -1,0 +1,189 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016.0   RS
+016.1   kbd_getc.kbd_down
+016.2   step_ON
+016.3   dc_ON
+016.4   step_horario
+017     i2c_addr
+018     backlight_val
+019     kbd_getc.kbd_call_count
+01A     kbd_getc.last_key
+01B     kbd_getc.col
+01C-01D strtok.save
+01E-021 _Randseed
+022-029 m
+02A-031 n
+032     flag
+033     count
+034     vel_dc
+035     i
+036     vel_step
+037     p
+038     k
+039     kbd_getc.kchar
+039     LCD_Begin._i2c_addr
+039     LCD_Goto.col
+039     lcd.@SCRATCH1
+039     motor_step.@SCRATCH1
+039     @PSTRINGC_9600_31766_31767.@SCRATCH1
+039     motor_dc.@SCRATCH1
+039     MAIN.@SCRATCH1
+039     @PSTRINGC_640.@SCRATCH1
+03A     @PRINTF_D_640.P1
+03A     LCD_Goto.row
+03A     kbd_getc.row
+03A     @delay_ms1.P1
+03A     @PSTRINGC_9600_31766_31767.@SCRATCH2
+03A     MAIN.@SCRATCH2
+03A     @PSTRINGC_640.@SCRATCH2
+03B     @PRINTF_D_640.P1
+03B     LCD_Goto.@SCRATCH1
+03B     ALL_ROWS.@SCRATCH1
+03B     kbd_getc.@SCRATCH1
+03B     MAIN.@SCRATCH3
+03C     LCD_Cmd.Command
+03C     kbd_getc.@SCRATCH2
+03C     @PRINTF_D_640.@SCRATCH1
+03C     MAIN.@SCRATCH4
+03D     LCD_Cmd.@SCRATCH1
+03D     @PRINTF_D_640.@SCRATCH2
+03E     @PRINTF_D_640.@SCRATCH3
+03F     @PRINTF_D_640.@SCRATCH4
+040     @DIV88.P1
+040     LCD_Out.LCD_Char
+041     @DIV88.P1
+041     LCD_Out.@SCRATCH1
+042     LCD_Write_Nibble.n
+042     @DIV88.@SCRATCH1
+043     LCD_Write_Nibble.@SCRATCH1
+044     Expander_Write.value
+045     Expander_Write.@SCRATCH1
+046     @I2C_WRITEU_1.P1
+047     RTCC_isr.@SCRATCH1
+F83     PSP_DATA
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  KEYS.call
+0000B0  KEYS.data
+0000C0  RTCC_isr
+000124  @const962.call
+00013A  @const971.call
+00014A  @const973.call
+00015A  @const974.call
+00016A  @const975.call
+00017E  @const976.call
+000196  @const977.call
+0001AE  @const978.call
+0001C2  @const979.call
+0001D4  @const980.call
+0001F6  @const981.call
+000212  @const982.call
+000234  @const983.call
+000250  @const984.call
+00027A  @const985.call
+000292  @const986.call
+0002A4  @const987.call
+0002B4  @const988.call
+0002DA  @const989.call
+0002F2  @const990.call
+0002FA  @I2C_WRITEU_1
+000316  Expander_Write
+000334  @delay_ms1
+00035A  LCD_Write_Nibble
+000390  LCD_Cmd
+0003B0  LCD_Begin
+000422  LCD_Goto
+00046A  LCD_Out
+00048A  @PSTRINGC_640
+0004AA  @DIV88
+0004D2  @PRINTF_D_640
+00057C  lcd
+0005F6  kbd_init
+000600  @PSTRINGC_9600_31766_31767
+000622  ALL_ROWS
+00065A  kbd_getc
+00073C  @goto10658
+000768  @PUTCHARI_BIU_1
+000770  motor_step
+0007BC  @goto12014
+0007EA  motor_dc
+000852  @goto12039
+00088A  MAIN
+00088A  @cinit1
+0008CC  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    C:\Users\IFMT\Desktop\Renan\Microcontroladores\Teclado_motor\
+
+Project Files:
+    Teclado_motor.c                                         [03-dez-19 11:01  CRC=24B91E2F]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18F452.h [21-jun-13 16:05  CRC=8BB2C0D6]
+    I2C_LCD.c                                               [21-ago-19 21:42  CRC=E3A5527A]
+    Teclado4x4.h                                            [21-nov-19 20:52  CRC=879FA850]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h [08-jun-11 14:39  CRC=0B6669CF]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h [16-jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h [14-jul-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h [03-jan-08 13:55  CRC=2D1F019F]
+
+Source signature=2EC01FD7
+
+Units:
+    Teclado_motor (main)
+
+Compiler Settings:
+    Processor:      PIC18F452
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   Teclado_motor.xsym
+    Errors:      Teclado_motor.err
+    Ext Symbols: Teclado_motor.esym
+    INHX32:      Teclado_motor.hex
+    Symbols:     Teclado_motor.sym
+    List:        Teclado_motor.lst
+    Debug/COFF:  Teclado_motor.cof
+    Project:     Teclado_motor.ccspjt
+    Call Tree:   Teclado_motor.tre
+    Statistics:  Teclado_motor.STA

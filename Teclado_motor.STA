@@ -1,0 +1,96 @@
+
+ROM used:   2810/16384 (9%)
+            2810/16384 (9%) including unused fragments
+
+            0.9 Average locations per line
+            3.5 Average locations per statement
+
+RAM used:   61/1536 (4%) at main() level
+            72/1536 (5%) worst case
+
+Stack used: 1 worst case (0 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  359   206  26  Teclado_motor.c
+  701     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18F452.h
+  117    47   6  I2C_LCD.c
+  139    55   7  Teclado4x4.h
+ 1351   359  45  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stdlib.h
+   32     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h
+  423   125  16  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\string.h
+   28     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\Drivers\ctype.h
+----- -----
+ 3150   792 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     28   0    1             @I2C_WRITEU_1
+0      8   0    0             @PUTCHARI_BIU_1
+0     54   1    2   153  2.7  LCD_Write_Nibble
+0     32   1    2   104  2.6  LCD_Cmd
+0     72   1    3   323  5.5  LCD_Goto
+0     32   1    2   104  2.6  LCD_Out
+0    114   2    1   502  2.9  LCD_Begin
+0     30   1    2   130  1.5  Expander_Write
+0     42   1    0             @const648
+0     10   0    0    32  1.0  kbd_init
+0     56   1    1   125  3.0  ALL_ROWS
+0    226   4    4  1622  9.2  kbd_getc
+0     44   1    0             @goto10658
+0    122   2    1   552  3.7  lcd
+0     40   1    3             @DIV88
+0    170   3    6             @PRINTF_D_640
+0    100   2    1   383  4.6  RTCC_isr
+0     76   1    1   450  5.4  motor_step
+0     22   0    0             @const962
+0     34   1    2             @PSTRINGC_9600_31766_31767
+0     46   1    0             @goto12014
+0    104   2    1   972  4.8  motor_dc
+0     56   1    0             @goto12039
+0    628  11    4  3553  9.4  MAIN
+0     16   0    0             @const971
+0     32   1    2             @PSTRINGC_640
+0     16   0    0             @const973
+0     16   0    0             @const974
+0     20   0    0             @const975
+0     24   0    0             @const976
+0     24   0    0             @const977
+0     20   0    0             @const978
+0     18   0    0             @const979
+0     34   1    0             @const980
+0     28   0    0             @const981
+0     34   1    0             @const982
+0     28   0    0             @const983
+0     42   1    0             @const984
+0     24   0    0             @const985
+0     18   0    0             @const986
+0     16   0    0             @const987
+0     38   1    0             @const988
+0     24   0    0             @const989
+0      8   0    0             @const990
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               14
+    Statements              792
+    Comments                939
+    Volume (V)              13474
+    Difficulty (D)          57.3
+    Effort to implement (E) 771478
+    Time to implement (T)   11 hours, 54 minutes
+    Est Delivered Bugs (B)  3
+    Cyclomatic Complexity   60
+    Maintainability (MI)    75
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  2664  29954  
+
+
+

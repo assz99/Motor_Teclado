@@ -1,0 +1,25 @@
+[PROJECT]
+Target=Teclado_motor.hex
+Processor_Text=PIC18F452
+CCSVerions=5.007
+Compiler=PCH
+CCSVersion=5.007
+[Target Data]
+FileList=Teclado_motor.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Users\maker\Desktop\Renan\MIcroControladores\Teclado_motor\;C:\Users\IFMT\Desktop\Teclado_motor\;C:\Users\IFMT\Desktop\Renan\Microcontroladores\Teclado_motor\
+[C:\Users\maker\Desktop\Renan\MIcroControladores\Teclado_motor\Teclado_motor]
+Type=4
+[mru-list]
+1=Teclado_motor.c
+[Opened Files]
+1=Teclado_motor.c
+2=..\..\..\..\..\..\Program Files (x86)\PICC\Devices\18F452.h
+3=..\PWM duplo\PWN_duplo.c
+4=
+5=
+[Teclado_motor.c]
+Type=4
+[Units]
+Count=1
+1=Teclado_motor (main)
